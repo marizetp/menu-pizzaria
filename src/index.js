@@ -104,7 +104,7 @@ function Pizza({pizza}){
     )
 }
 
-function Footer(){
+function Footer(){ 
     const hora = new Date().getHours();
     const horaAbertura = 9, horaEncerramento = 22;
     let msg;
@@ -116,7 +116,7 @@ function Footer(){
             {new Date().toLocaleTimeString(undefined, {hour: '2-digit', minute: '2-digit'})} <br/>{msg}
            </p>
             
-           {isOpen && <button className='btn'>Encomendar</button> }
+           {isOpen && <button className='btn'>Pedir</button> }
 
         </footer>
     )
